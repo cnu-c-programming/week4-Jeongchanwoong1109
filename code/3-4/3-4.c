@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 void inc(int* x) {
-    *x = *x + 1;
-    printf("%d\n", *x);
+    if (x != NULL) {
+        *x = *x + 1;
+        printf("%d\n", *x);
+    }
 }
 
 int main()
